@@ -26,7 +26,7 @@
 
 <details>
   <br/>
-  <summary>Type of Messaging Channels?</summary>
+  <summary>Type of Messaging Channels</summary>
   
    These two sub-interfaces that define the buffering (pollable) and non-buffering (subscribable) channel behavior.
 
@@ -50,10 +50,28 @@
 
    }
    ```
+</details>
 
+<details>
+  <br/>
+  <summary>Channel Interceptor</summary>
+  
+   
 </details>
 
 ### Messages
+The Spring Integration `Message` is a generic container for data.
+```
+public interface Message<T> {
+
+    T getPayload();
+
+    MessageHeaders getHeaders();
+
+}
+```
+### Message Routing
+### Message Transformation
 ### Message Endpoint
 ## HTTP
 ## JMS
