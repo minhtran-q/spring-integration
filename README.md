@@ -8,9 +8,52 @@
 
 ### Messaging Channels
 
+<details>
+  <br/>
+  <summary>What is Messaging Channels?</summary>
+  The `MessageChannel` decouples message producers from messgae consumers.
 
+  ```
+  public interface MessageChannel {
+
+      boolean send(Message message);
+
+      boolean send(Message message, long timeout);
+  }
+  ```
+  _`MessageChannel` interface_
+</details>
+
+<details>
+  <br/>
+  <summary>Type of Messaging Channels?</summary>
+  
+   These two sub-interfaces that define the buffering (pollable) and non-buffering (subscribable) channel behavior.
+
+   **PollableChannel**
+   ```
+   public interface PollableChannel extends MessageChannel {
+
+    Message<?> receive();
+
+    Message<?> receive(long timeout);
+
+   }
+   ```
+   **SubscribableChannel**
+   ```
+   public interface SubscribableChannel extends MessageChannel {
+
+    boolean subscribe(MessageHandler handler);
+
+    boolean unsubscribe(MessageHandler handler);
+
+   }
+   ```
+
+</details>
 
 ### Messages
-### Message Engpoint
+### Message Endpoint
 ## HTTP
 ## JMS
