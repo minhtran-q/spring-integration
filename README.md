@@ -78,7 +78,7 @@ public interface Message<T> {
 </details>
 <details>
   <br/>
-  <summary>Type of Message Endpoint</summary>
+  <summary>Messgae endpoints are supported by Spring Integration</summary>
   
 </details>
 
@@ -90,7 +90,7 @@ public interface Message<T> {
 </details>
 <details>
   <br/>
-  <summary>Type of Message Routing</summary>
+  <summary>Message routings are supported by Spring Integration</summary>
   
 </details>
 
@@ -102,7 +102,7 @@ public interface Message<T> {
 </details>
 <details>
   <br/>
-  <summary>Type of Message Transformation</summary>
+  <summary>Message transformation support by Spring Integration</summary>
   
 </details>
 
