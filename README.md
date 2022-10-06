@@ -70,8 +70,41 @@ public interface Message<T> {
 
 }
 ```
-### Message Routing
-### Message Transformation
 ### Message Endpoint
+<details>
+  <br/>
+  <summary>What is Message Endpoint?</summary>
+  
+</details>
+<details>
+  <br/>
+  <summary>Type of Message Endpoint</summary>
+  
+</details>
+
+### Message Routing
+<details>
+  <br/>
+  <summary>What is Message Routing?</summary>
+  
+</details>
+<details>
+  <br/>
+  <summary>Type of Message Routing</summary>
+  
+</details>
+
+### Message Transformation
+<details>
+  <br/>
+  <summary>What is Message Transformation?</summary>
+  
+</details>
+<details>
+  <br/>
+  <summary>Type of Message Transformation</summary>
+  
+</details>
+
 ## HTTP
 ## JMS
