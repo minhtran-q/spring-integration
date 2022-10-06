@@ -29,8 +29,7 @@
   <summary>Type of Messaging Channels</summary>
   
    These two sub-interfaces that define the buffering (pollable) and non-buffering (subscribable) channel behavior.
-
-   **PollableChannel**
+   
    ```
    public interface PollableChannel extends MessageChannel {
 
@@ -40,7 +39,7 @@
 
    }
    ```
-   **SubscribableChannel**
+   **_PollableChannel_**
    ```
    public interface SubscribableChannel extends MessageChannel {
 
@@ -50,6 +49,7 @@
 
    }
    ```
+   **_SubscribableChannel_**
 </details>
 
 <details>
