@@ -33,9 +33,9 @@
    ```
    public interface PollableChannel extends MessageChannel {
 
-    Message<?> receive();
+      Message<?> receive();
 
-    Message<?> receive(long timeout);
+      Message<?> receive(long timeout);
 
    }
    ```
@@ -43,9 +43,9 @@
    ```
    public interface SubscribableChannel extends MessageChannel {
 
-    boolean subscribe(MessageHandler handler);
+      boolean subscribe(MessageHandler handler);
 
-    boolean unsubscribe(MessageHandler handler);
+      boolean unsubscribe(MessageHandler handler);
 
    }
    ```
