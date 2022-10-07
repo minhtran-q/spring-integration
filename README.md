@@ -9,8 +9,9 @@
 ### Messaging Channels
 
 <details>
-  <br/>
   <summary>What is Messaging Channels?</summary>
+  <br/>
+  
   The `MessageChannel` decouples message producers from messgae consumers.
 
   ```
