@@ -88,6 +88,12 @@ public interface Message<T> {
   <br/>
   <summary>What is Message Endpoint?</summary>
   
+  A Message Endpoint represents the “filter” of a _pipes-and-filters_ architecture. One of the primary goals is to simplify the development of enterprise integration solutions.
+  
+  In other words, you should **not** implement the consumer or producer directly. Instead, you can **focus on** your business implementation. 
+  
+  Just as a controller handles HTTP requests, the message endpoint handles messages. Just as controllers are mapped to URL patterns, message endpoints are mapped to message channels.
+  
 </details>
 <details>
   <summary>Messgae endpoints are supported by Spring Integration</summary>
