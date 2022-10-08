@@ -96,12 +96,15 @@ public interface Message<T> {
   
 </details>
 <details>
-  <summary>Messgae endpoints are supported by Spring Integration</summary>
+  <summary>Messgae endpoints</summary>
   <br/>
   
-  + Channel Adapter
-  + Service Activator
-  + Messaging Gateways
+  + Messgae endpoints in EIP
+  
+  + Messgae endpoints in Spring Integration
+    + Channel Adapter
+    + Service Activator
+    + Messaging Gateways
 </details>
 
 ### Message Routing
