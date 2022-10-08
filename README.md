@@ -166,6 +166,21 @@ public interface Message<T> {
     + Service Activator
     + Messaging Gateways
 </details>
+<details>
+  <br/>
+  <summary>Channel Adapter</summary>
+  
+</details>
+<details>
+  <br/>
+  <summary>Service Activator</summary>
+  
+</details>
+<details>
+  <br/>
+  <summary>Messaging Gateways</summary>
+  
+</details>
 
 ### Message Routing
 <details>
