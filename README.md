@@ -29,7 +29,7 @@
 
 <details>
   <br/>
-  <summary>Type of Messaging Channel</summary>
+  <summary>Messaging Channel API in Spring Integration</summary>
   
    These two sub-interfaces that define the buffering (pollable) and non-buffering (subscribable) channel behavior.
    
