@@ -64,7 +64,7 @@
   <br/>
   <summary>PriorityChannel</summary>
   
-  
+  `PriorityChannel` is an alternative implementation that allows for messages to be ordered within the channel based upon a priority. By default, the priority is determined by the priority header within each message. A comparator of type `Comparator<Message<?>>` can be provided to the `PriorityChannel` constructor.
   
 </details>
 <details>
