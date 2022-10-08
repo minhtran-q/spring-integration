@@ -101,6 +101,8 @@ public interface Message<T> {
   
   + Messgae endpoints in EIP
   
+  ![](images/message_endpoint.jpeg)
+  
   + Messgae endpoints in Spring Integration
     + Channel Adapter
     + Service Activator
