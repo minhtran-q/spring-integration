@@ -6,7 +6,7 @@
 + Supports integration with external systems via declarative adapters.
 + Spring Integration typically implements a "pipes-and-filters" approach where the "filters" are components that produce or consume messages and the "pipes" transport messages.
 
-![](images/overview)
+![](images/overview.png)
 
 ### Messaging Channels
 
