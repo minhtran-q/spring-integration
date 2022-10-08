@@ -27,7 +27,7 @@
 
 <details>
   <br/>
-  <summary>Type of Messaging Channels</summary>
+  <summary>Type of Messaging Channel</summary>
   
    These two sub-interfaces that define the buffering (pollable) and non-buffering (subscribable) channel behavior.
    
