@@ -45,14 +45,19 @@
   <br/>
   <summary>QueueChannel</summary>
   
+  The `QueueChannel` implementation wraps a queue. The QueueChannel has point-to-point semantics. In other words, even if the channel has multiple consumers, only one of them should receive any Message sent to that channel.
   
+  ```
+  public QueueChannel(int capacity)
+  ```
   
+  If the queue has reached capacity, the sender blocks until room is available in the queue.
 </details>
 <details>
   <br/>
   <summary>PublishSubscribeChannel</summary>
   
-  
+  The `PublishSubscribeChannel` implementation broadcasts any Message sent to it to all of its subscribed handlers. This is most often used for sending event messages and the `PublishSubscribeChannel` is intended for sending only.
   
 </details>
 <details>
