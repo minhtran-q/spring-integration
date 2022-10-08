@@ -26,7 +26,12 @@
   ```
   _`MessageChannel` interface_
 </details>
-
+<details>
+  <br/>
+  <summary>Messaging Channels</summary>
+  
+  ![](images/Messaging_Channels.jpeg) 
+</details>
 <details>
   <br/>
   <summary>Messaging Channel API in Spring Integration</summary>
