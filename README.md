@@ -43,6 +43,34 @@
 </details>
 <details>
   <br/>
+  <summary>QueueChannel</summary>
+  
+  
+  
+</details>
+<details>
+  <br/>
+  <summary>PublishSubscribeChannel</summary>
+  
+  
+  
+</details>
+<details>
+  <br/>
+  <summary>PriorityChannel</summary>
+  
+  
+  
+</details>
+<details>
+  <br/>
+  <summary>DirectChannel</summary>
+  
+  
+  
+</details>
+<details>
+  <br/>
   <summary>Messaging Channel API in Spring Integration</summary>
   
    These two sub-interfaces that define the buffering (pollable) and non-buffering (subscribable) channel behavior.
