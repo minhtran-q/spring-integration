@@ -35,7 +35,11 @@
   ![](images/Messaging_Channels.jpeg)
   
   + Messaging Channels in Spring Integration
-    + .
+    + QueueChannel
+    + PublishSubscribeChannel
+    + PriorityChannel
+    + DirectChannel
+    + ...
 </details>
 <details>
   <br/>
