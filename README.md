@@ -71,7 +71,7 @@
   <br/>
   <summary>DirectChannel</summary>
   
-  
+  The `DirectChannel` has point-to-point semantics but it implements the `SubscribableChannel` interface instead of the `PollableChannel` interface, so it dispatches messages directly to a subscriber. It sends each Message to a single subscribed `MessageHandler`.
   
 </details>
 <details>
