@@ -30,7 +30,12 @@
   <br/>
   <summary>Messaging Channels</summary>
   
-  ![](images/Messaging_Channels.jpeg) 
+  + Messaging Channels in EIP
+  
+  ![](images/Messaging_Channels.jpeg)
+  
+  + Messaging Channels in Spring Integration
+    + .
 </details>
 <details>
   <br/>
