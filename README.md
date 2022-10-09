@@ -273,3 +273,6 @@
 
 ## HTTP
 ## JMS
++ There are actually **two JMS-based inbound Channel Adapters**. The first uses Spring’s `JmsTemplate` to receive based on a polling period. The second is “message-driven” and relies on a Spring `MessageListener` container. 
++ The outbound channel adapter uses the `JmsTemplate` to convert and send a JMS message on demand.
+### 
