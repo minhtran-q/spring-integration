@@ -235,7 +235,9 @@
 <details>
   <summary>Messaging Gateways</summary>
   <br/>
-  Gateways are used to send and receive messages.
+  Gateways are used to send and receive messages. Gateways are two-way (request/reply).
+
+  Inbound gateways are where some external system sends a request and Spring Integration replies. Outbound gateways are where Spring Integration makes the request and some external system replies.
   
   ```
   @MessagingGateway // it also a bean
