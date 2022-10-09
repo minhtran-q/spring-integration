@@ -145,7 +145,8 @@ public interface Message<T> {
 <details>
   <summary>What is Message Endpoint?</summary>
   <br/>
-  A Message Endpoint represents the “filter” of a pipes-and-filters architecture. One of the primary goals is to simplify the development of enterprise integration solutions.
+
+  A Message Endpoint represents the “**filter**” of a _pipes-and-filters_ architecture. One of the primary goals is to simplify the development of enterprise integration solutions.
   
   In other words, you should **not** implement the consumer or producer directly. Instead, you can **focus on** your business implementation. 
   
