@@ -177,6 +177,8 @@
   <br/>
   A channel adapter is a message endpoint that enables connecting a single sender or receiver to a message channel. Spring Integration provides a number of adapters to support various transports, such as JMS, file, HTTP, ...
 
+  Concretely, inbound adapters are at the beginning of a flow, outbound adapters terminate a flow.
+
   **Configuring An Inbound Channel Adapter**
 
   ![](images/inbound-channel-endpoint.jpg)
