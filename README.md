@@ -143,10 +143,9 @@ public interface Message<T> {
 ```
 ### Message Endpoint
 <details>
-  <br/>
   <summary>What is Message Endpoint?</summary>
-  
-  A Message Endpoint represents the “filter” of a _pipes-and-filters_ architecture. One of the primary goals is to simplify the development of enterprise integration solutions.
+  <br/>
+  A Message Endpoint represents the “filter” of a pipes-and-filters architecture. One of the primary goals is to simplify the development of enterprise integration solutions.
   
   In other words, you should **not** implement the consumer or producer directly. Instead, you can **focus on** your business implementation. 
   
@@ -167,25 +166,25 @@ public interface Message<T> {
     + Messaging Gateways
 </details>
 <details>
-  <br/>
   <summary>Channel Adapter</summary>
-  
+  <br/>
+  A channel adapter is a message endpoint that enables connecting a single sender or receiver to a message channel. 
 </details>
 <details>
-  <br/>
   <summary>Service Activator</summary>
+  <br/>
   
 </details>
 <details>
-  <br/>
   <summary>Messaging Gateways</summary>
+  <br/>
   
 </details>
 
 ### Message Routing
 <details>
-  <br/>
   <summary>What is Message Routing?</summary>
+  <br/>
   
 </details>
 <details>
@@ -196,13 +195,13 @@ public interface Message<T> {
 
 ### Message Transformation
 <details>
-  <br/>
   <summary>What is Message Transformation?</summary>
+  <br/>
   
 </details>
 <details>
-  <br/>
   <summary>Message transformation support by Spring Integration</summary>
+  <br/>
   
 </details>
 
