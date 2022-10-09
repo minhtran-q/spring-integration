@@ -283,6 +283,7 @@
 <details>
   <summary>JmsTemplate</summary>
   <br/>
+  
   The `JmsTemplate` apply for a polling period.
 
   ```
@@ -306,7 +307,8 @@
 <details>
   <summary>Message-driven Channel Adapter</summary>
   <br/>
-   The “message-driven” relies on a Spring `MessageListener` container. You have to provide 3 main beans such as: `JmsMessageDrivenEndpoint`, `AbstractMessageListenerContainer` , `ChannelPublishingJmsMessageListener`.
+  
+  The “message-driven” relies on a Spring `MessageListener` container. You have to provide 3 main beans such as: `JmsMessageDrivenEndpoint`, `AbstractMessageListenerContainer` , `ChannelPublishingJmsMessageListener`.
   
   ```
   @Bean
