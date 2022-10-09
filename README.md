@@ -131,16 +131,22 @@
 </details>
 
 ### Messages
-The Spring Integration `Message` is a generic container for data.
-```
-public interface Message<T> {
+<details>
+  <summary>What is Message?</summary>
+  <br/>
 
-    T getPayload();
+  The Spring Integration `Message` is a generic container for data.
+  ```
+  public interface Message<T> {
 
-    MessageHeaders getHeaders();
+      T getPayload();
 
-}
-```
+      MessageHeaders getHeaders();
+
+  }
+  ```
+</details>
+
 ### Message Endpoint
 <details>
   <summary>What is Message Endpoint?</summary>
