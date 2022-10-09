@@ -208,7 +208,8 @@ public interface Message<T> {
 <details>
   <summary>Messaging Gateways</summary>
   <br/>
-  
+  Gateways are used to send and receive messages.
+
 </details>
 
 ### Message Routing
