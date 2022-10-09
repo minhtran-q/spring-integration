@@ -169,7 +169,22 @@ public interface Message<T> {
 <details>
   <summary>Channel Adapter</summary>
   <br/>
-  A channel adapter is a message endpoint that enables connecting a single sender or receiver to a message channel. 
+  A channel adapter is a message endpoint that enables connecting a single sender or receiver to a message channel. Spring Integration provides a number of adapters to support various transports, such as JMS, file, HTTP, ...
+
+  ```
+  public class SourceService {
+
+      @InboundChannelAdapter(channel = "channel1", poller = @Poller(fixedRate = "5000"))
+      Object method1() {
+          ...
+      }
+
+      @InboundChannelAdapter(channel = "channel2", poller = @Poller(cron = "30 * 9-17 * * MON-FRI"))
+      Object method2() {
+          ...
+      }
+  }
+  ```
 </details>
 <details>
   <summary>Service Activator</summary>
