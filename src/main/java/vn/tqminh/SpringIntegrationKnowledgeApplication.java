@@ -1,4 +1,4 @@
-package vn.tqminh.springintegrationknowledge;
+package vn.tqminh;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
