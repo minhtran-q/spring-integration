@@ -205,7 +205,14 @@ public interface Message<T> {
   <br/>
   The Service Activator is any POJO that defines the @ServiceActivator annotation on a given method. This allows us to execute any method on our POJO when a message is received from an inbound channel, and it allows us to write messages to an outward channel.
   
-  
+  ```
+  @ServiceActivator(inputChannel = "myInputChannel", outputChannel = "myOutputChannel")
+  public String toUppercase(Message<String> message) {
+      System.out.println("Received message from myInputChannel : " + message.getPayload());
+
+      return message.getPayload().toUpperCase();
+  }
+  ```
 
 </details>
 <details>
