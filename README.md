@@ -154,7 +154,7 @@ public interface Message<T> {
   
 </details>
 <details>
-  <summary>Messgae endpoints</summary>
+  <summary>Message endpoints</summary>
   <br/>
   
   + Messgae endpoints in EIP
@@ -209,7 +209,17 @@ public interface Message<T> {
   <summary>Messaging Gateways</summary>
   <br/>
   Gateways are used to send and receive messages.
+  
+  ```
+  @MessagingGateway
+  public interface CustomGateway {
 
+    @Gateway(requestChannel = "myUpperCaseChannel")
+    public String sendToUppercaseChannel(String message);
+
+  }
+  ```
+  
 </details>
 
 ### Message Routing
