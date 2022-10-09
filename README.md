@@ -171,7 +171,10 @@ public interface Message<T> {
   <br/>
   A channel adapter is a message endpoint that enables connecting a single sender or receiver to a message channel. Spring Integration provides a number of adapters to support various transports, such as JMS, file, HTTP, ...
 
+  **Configuring An Inbound Channel Adapter**
 
+  ![](images/inbound-channel-endpoint.jpg)
+  
   ```
   public class SourceService {
 
@@ -186,7 +189,11 @@ public interface Message<T> {
       }
   }
   ```
-  _Configuring An Inbound Channel Adapter_
+  _code snippet_
+
+  **Configuring An Outbound Channel Adapter**
+
+  ![](images/outbound-channel-adapter.jpg)
 
   ```
   public class MyPojo {
@@ -195,10 +202,9 @@ public interface Message<T> {
       void handle(Object payload) {
           ...
       }
-
   }
   ```
-  _Configuring An Outbound Channel Adapter_
+  _code snippet_
 </details>
 <details>
   <summary>Service Activator</summary>
