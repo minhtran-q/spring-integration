@@ -203,7 +203,10 @@ public interface Message<T> {
 <details>
   <summary>Service Activator</summary>
   <br/>
+  The Service Activator is any POJO that defines the @ServiceActivator annotation on a given method. This allows us to execute any method on our POJO when a message is received from an inbound channel, and it allows us to write messages to an outward channel.
   
+  
+
 </details>
 <details>
   <summary>Messaging Gateways</summary>
@@ -211,7 +214,7 @@ public interface Message<T> {
   Gateways are used to send and receive messages.
   
   ```
-  @MessagingGateway
+  @MessagingGateway // it also a bean
   public interface CustomGateway {
 
     @Gateway(requestChannel = "myUpperCaseChannel")
