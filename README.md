@@ -334,3 +334,19 @@
 </details>
 
 ### Outbound Channel Adapter
+<details>
+  <summary>Outbound Channel Adapter</summary>
+  <br/>
+  
+  The `JmsSendingMessageHandler` implements the `MessageHandler` interface and is capable of converting Spring Integration `Messages` to JMS messages and then sending to a JMS destination.
+
+  ```
+  @Bean
+  @ServiceActivator(inputChannel = "exampleChannel")
+  public MessageHandler jmsOut() {
+      JmsSendingMessageHandler handler = new JmsSendingMessageHandler(new JmsTemplate(connectionFactory));
+      handler.setDestinationName("outQueue");
+      return handler;
+  }
+  ```
+</details>
