@@ -279,4 +279,56 @@
 ## JMS
 + There are actually **two JMS-based inbound Channel Adapters**. The first uses Spring’s `JmsTemplate` to receive based on a polling period. The second is “message-driven” and relies on a Spring `MessageListener` container. 
 + The outbound channel adapter uses the `JmsTemplate` to convert and send a JMS message on demand.
-### 
+### Inbound Channel Adapter
+<details>
+  <summary>JmsTemplate</summary>
+  <br/>
+  The `JmsTemplate` apply for a polling period.
+
+  ```
+  @Bean
+  @InboundChannelAdapter(value = "exampleChannel", poller = @Poller(fixedRate = "30000"))
+  public MessageSource<Object> jmsIn(ConnectionFactory connectionFactory) {
+      JmsDestinationPollingSource source = new JmsDestinationPollingSource(new JmsTemplate(connectionFactory));
+      source.setDestinationName("inQueue");
+      return source;
+  }
+  ```
+   _code snippet_
+
+  If extract-payload is set to true (the default), the received JMS Message is passed through the MessageConverter
+</details>
+<details>
+  <summary>JmsTemplate - Transactions</summary>
+  <br/>
+
+</details>
+<details>
+  <summary>Message-driven Channel Adapter</summary>
+  <br/>
+   The “message-driven” relies on a Spring `MessageListener` container. You have to provide 3 main beans such as: `JmsMessageDrivenEndpoint`, `AbstractMessageListenerContainer` , `ChannelPublishingJmsMessageListener`.
+  
+  ```
+  @Bean
+  public JmsMessageDrivenEndpoint jmsIn() {
+      JmsMessageDrivenEndpoint endpoint = new JmsMessageDrivenEndpoint(container(), listener());
+      return endpoint;
+  }
+  @Bean
+  public AbstractMessageListenerContainer container() {
+      DefaultMessageListenerContainer container = new DefaultMessageListenerContainer();
+      container.setConnectionFactory(cf());
+      container.setDestinationName("inQueue");
+      return container;
+  }
+
+  @Bean
+  public ChannelPublishingJmsMessageListener listener() {
+      ChannelPublishingJmsMessageListener listener = new ChannelPublishingJmsMessageListener();
+      listener.setRequestChannelName("exampleChannel");
+      return listener;
+  }
+  ```
+</details>
+
+### Outbound Channel Adapter
